@@ -1,0 +1,22 @@
+server:
+  port: ${serverPort}
+
+spring:
+  application:
+    name: ${artifactId}
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    register-with-eureka: false
+    eureka-service-url-poll-interval-seconds: 10
+    registry-fetch-interval-seconds: 5
+
+giants:
+  boot:
+    base-package: ${package}
+    call-stack-time-analyse-log-config:
+      http-request-exe-time-threshold: 500

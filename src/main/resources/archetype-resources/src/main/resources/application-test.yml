@@ -1,0 +1,13 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${eurekaServiceUrl}
+
+logging:
+  level:
+    com: debug
+
+giants:
+  boot:
+    swagger-config:
+      enabled: true
